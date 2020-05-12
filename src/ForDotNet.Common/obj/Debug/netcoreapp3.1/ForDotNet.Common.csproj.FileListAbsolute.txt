@@ -1,0 +1,9 @@
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.deps.json
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.dll
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.AssemblyInfoInputs.cache
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.AssemblyInfo.cs
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.pdb
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.dll
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.pdb
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csprojAssemblyReference.cache
+C:\Users\WYP\Desktop\ForDotNet\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csproj.CoreCompileInputs.cache
