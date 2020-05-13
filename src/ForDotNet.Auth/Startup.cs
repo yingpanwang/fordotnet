@@ -1,18 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using ForDotNet.Auth.Config;
 using ForDotNet.Common.Consul.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using IApplicationLifetime = Microsoft.AspNetCore.Hosting.IApplicationLifetime;
+using System.Collections.Generic;
 
 namespace ForDotNet.Auth
 {
@@ -28,7 +21,6 @@ namespace ForDotNet.Auth
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
@@ -42,15 +34,15 @@ namespace ForDotNet.Auth
                          Password = "123",
                          SubjectId = "999"
                      }
-                }) ;
+                });
 
             services.AddConsulServiceDiscovery();
-            
+
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IHostApplicationLifetime life)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime life)
         {
             if (env.IsDevelopment())
             {

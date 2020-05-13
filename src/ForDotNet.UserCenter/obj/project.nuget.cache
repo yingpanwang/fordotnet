@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VRwQWxQvy8R1rgX9BrGOIrpPxDQi0b/yC9CYVpgUeWCY7FbCIUXmhKRCLpW5MNXtPcuvUKMKQZbANOi8PvuIQg==",
+  "dgSpecHash": "L2kdrK49MUvioYKzSUJvfw8DNQlvml1cvPYMGGjzJ2VCOL0+GFitT/RHTgiCjEPEyEoY40XM0uaj/54cOFhIwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
+  "projectFilePath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WYP\\.nuget\\packages\\consul\\0.7.2.6\\consul.0.7.2.6.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\identitymodel\\4.2.0\\identitymodel.4.2.0.nupkg.sha512",

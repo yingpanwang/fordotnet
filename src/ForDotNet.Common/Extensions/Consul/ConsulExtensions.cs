@@ -1,16 +1,9 @@
-﻿
-using Consul;
+﻿using Consul;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ForDotNet.Common.Consul.Extensions
 {
@@ -58,7 +51,7 @@ namespace ForDotNet.Common.Consul.Extensions
     /// <summary>
     /// consul配置信息
     /// </summary>
-    public class ConsulOptions 
+    public class ConsulOptions
     {
         /// <summary>
         /// consul ip
@@ -79,9 +72,8 @@ namespace ForDotNet.Common.Consul.Extensions
     /// <summary>
     /// consul注册客户端信息
     /// </summary>
-    public class ConsulClientInfo 
+    public class ConsulClientInfo
     {
-
         /// <summary>
         /// 注册信息
         /// </summary>
@@ -98,7 +90,7 @@ namespace ForDotNet.Common.Consul.Extensions
     /// </summary>
     public static class ConsulExtensions
     {
-        private static readonly ServiceOptions serviceOptions = new ServiceOptions ();
+        private static readonly ServiceOptions serviceOptions = new ServiceOptions();
 
         /// <summary>
         /// 添加consul
@@ -108,7 +100,7 @@ namespace ForDotNet.Common.Consul.Extensions
             var config = services.BuildServiceProvider().GetService<IConfiguration>();
             config.GetSection("ServiceOptions").Bind(serviceOptions);
             //config.Bind(serviceOptions);
-            
+
             if (serviceOptions == null)
             {
                 throw new Exception("获取服务注册信息失败!请检查配置信息是否正确!");
@@ -122,7 +114,7 @@ namespace ForDotNet.Common.Consul.Extensions
         /// <param name="app"></param>
         /// <param name="life">引用生命周期</param>
         /// <param name="options">配置参数</param>
-        public static void AddConsulServiceDiscovery(this IServiceCollection services ,Action<ServiceOptions> options) 
+        public static void AddConsulServiceDiscovery(this IServiceCollection services, Action<ServiceOptions> options)
         {
             options.Invoke(serviceOptions);
             Register(services);
@@ -133,7 +125,7 @@ namespace ForDotNet.Common.Consul.Extensions
         /// </summary>
         /// <param name="app"></param>
         /// <param name="life"></param>
-        public static void UseConsulServiceDiscovery(this IApplicationBuilder app, IHostApplicationLifetime life) 
+        public static void UseConsulServiceDiscovery(this IApplicationBuilder app, IHostApplicationLifetime life)
         {
             var consulClientInfo = app.ApplicationServices.GetRequiredService<ConsulClientInfo>();
             if (consulClientInfo != null)
@@ -148,7 +140,7 @@ namespace ForDotNet.Common.Consul.Extensions
                     await consulClientInfo.Client.Agent.ServiceDeregister(consulClientInfo.RegisterInfo.ID);
                 });
             }
-            else 
+            else
             {
                 throw new NullReferenceException("未找到相关consul客户端信息!");
             }
@@ -160,7 +152,7 @@ namespace ForDotNet.Common.Consul.Extensions
             {
                 throw new Exception("获取服务注册信息失败!请检查配置信息是否正确!");
             }
-            if (serviceOptions.ConsulOptions == null) 
+            if (serviceOptions.ConsulOptions == null)
             {
                 throw new ArgumentNullException("请检查是否配置Consul信息！");
             }
@@ -195,6 +187,5 @@ namespace ForDotNet.Common.Consul.Extensions
                 RegisterInfo = registration
             });
         }
-
     }
 }

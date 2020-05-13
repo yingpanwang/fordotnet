@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj": {}
+    "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj": {
+    "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj",
+        "projectUniqueName": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
         "projectName": "ForDotNet.Common",
-        "projectPath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj",
+        "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
         "packagesPath": "C:\\Users\\WYP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\obj\\",
+        "outputPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -89,6 +89,14 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "Ocelot": {
+              "target": "Package",
+              "version": "[15.0.6, )"
+            },
+            "Ocelot.Provider.Consul": {
+              "target": "Package",
+              "version": "[15.0.6, )"
             }
           },
           "imports": [

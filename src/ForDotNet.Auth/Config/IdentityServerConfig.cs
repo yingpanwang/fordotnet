@@ -1,12 +1,8 @@
 ﻿using IdentityServer4.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ForDotNet.Auth.Config
 {
-
     /// <summary>
     /// IdentityServer4配置信息
     /// </summary>
@@ -34,22 +30,21 @@ namespace ForDotNet.Auth.Config
         /// <returns></returns>
         public static IEnumerable<Client> GetClients()
         {
-            
             Client authClient = new Client()
             {
                 ClientId = AuthClientId,
-                ClientSecrets = new List<Secret>() 
+                ClientSecrets = new List<Secret>()
                 {
                     GetSecret(AuthClientId)
                 },
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-                AllowedScopes = new string[] 
+                AllowedScopes = new string[]
                 {
                     "Auth"
                 }
             };
 
-            Client userClient = new Client() 
+            Client userClient = new Client()
             {
                 ClientId = UserCenterClientId,
                 ClientSecrets = new List<Secret>()
@@ -70,11 +65,10 @@ namespace ForDotNet.Auth.Config
             };
         }
 
-        public static IEnumerable<IdentityResource> GetIdentityResources() 
+        public static IEnumerable<IdentityResource> GetIdentityResources()
         {
-            return new List<IdentityResource>() 
+            return new List<IdentityResource>()
             {
-               
             };
         }
 
@@ -85,11 +79,11 @@ namespace ForDotNet.Auth.Config
         /// </summary>
         /// <param name="clientId">clientId</param>
         /// <returns></returns>
-        private static Secret GetSecret(string clientId) 
+        private static Secret GetSecret(string clientId)
         {
             return new Secret(clientId.Sha256());
         }
 
-        #endregion
+        #endregion 私有方法
     }
 }

@@ -1,44 +1,31 @@
 {
-
   "ReRoutes": [
-
-    // UserCenter
-    {
-      "UpstreamPathTemplate": "/user/{service}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-
-      // "ServiceName": "UserCenter",
-
-      "DownstreamPathTemplate": "/api/{service}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "8500"
-        }
-      ]
-    },
-
-    // Auth-Login
+    // Auth
     {
       "UpstreamPathTemplate": "/auth/{action}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-
-      // "ServiceName": "Auth",
-
+      "ServiceName": "Auth",
+      "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/connect/{action}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "5800"
-        }
-      ]
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      }
+      //"DownstreamHostAndPorts": [
+      //  {
+      //    "Host": "localhost",
+      //    "Port": "5800"
+      //  }
+      //]
     }
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000"
+    "BaseUrl": "http://localhost:5000",
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul"
+    }
   }
-
 }

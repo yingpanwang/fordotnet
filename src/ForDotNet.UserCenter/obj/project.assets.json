@@ -6965,11 +6965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
+      "projectUniqueName": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
       "projectName": "ForDotNet.UserCenter",
-      "projectPath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
+      "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.UserCenter\\ForDotNet.UserCenter.csproj",
       "packagesPath": "C:\\Users\\WYP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.UserCenter\\obj\\",
+      "outputPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.UserCenter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6989,8 +6989,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj": {
-              "projectPath": "C:\\Users\\WYP\\Desktop\\ForDotNet\\ForDotNet.Common\\ForDotNet.Common.csproj"
+            "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
+              "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj"
             }
           }
         }
