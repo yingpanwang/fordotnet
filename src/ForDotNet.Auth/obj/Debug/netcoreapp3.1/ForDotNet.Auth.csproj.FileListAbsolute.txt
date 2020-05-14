@@ -265,9 +265,6 @@ D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\bin\Debug\netcoreapp3.1\runt
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\bin\Debug\netcoreapp3.1\ForDotNet.Common.dll
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\bin\Debug\netcoreapp3.1\ForDotNet.Common.pdb
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.csprojAssemblyReference.cache
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.csproj.CoreCompileInputs.cache
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.MvcApplicationPartsAssemblyInfo.cs
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.MvcApplicationPartsAssemblyInfo.cache
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.AssemblyInfoInputs.cache
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.AssemblyInfo.cs
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.RazorTargetAssemblyInfo.cache
@@ -277,3 +274,6 @@ D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\stat
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.dll
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.pdb
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.genruntimeconfig.cache
+D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.csproj.CoreCompileInputs.cache
+D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.MvcApplicationPartsAssemblyInfo.cs
+D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.MvcApplicationPartsAssemblyInfo.cache

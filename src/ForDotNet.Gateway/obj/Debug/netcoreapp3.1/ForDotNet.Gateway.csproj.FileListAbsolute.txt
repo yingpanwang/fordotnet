@@ -174,9 +174,6 @@ D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\bin\Debug\netcoreapp3.1\F
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\bin\Debug\netcoreapp3.1\ForDotNet.Auth.pdb
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\bin\Debug\netcoreapp3.1\ForDotNet.Common.pdb
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.csprojAssemblyReference.cache
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.csproj.CoreCompileInputs.cache
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.MvcApplicationPartsAssemblyInfo.cs
-D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.MvcApplicationPartsAssemblyInfo.cache
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.AssemblyInfoInputs.cache
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.AssemblyInfo.cs
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.RazorTargetAssemblyInfo.cache

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t5PFA3lSO0/MgLFiK8soABA3YyR+sKS2yZnaa96OcTk2ohAOEcCqFyeT8j20x4twqK+2n8nnVwTRJchMCAbUxA==",
+  "dgSpecHash": "hAlwA71gFS9dZN2tA68+IDlAWqFAGTyKG/S74T2xSvv5LplnldfxtrmGuY+861c+1DgBC5qmDtl4ILlVEV4FVg==",
   "success": true,
   "projectFilePath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Gateway\\ForDotNet.Gateway.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,7 @@
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\WYP\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.2\\microsoft.visualstudio.web.codegeneration.3.1.2.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.2\\microsoft.visualstudio.web.codegeneration.contracts.3.1.2.nupkg.sha512",
     "C:\\Users\\WYP\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.2\\microsoft.visualstudio.web.codegeneration.core.3.1.2.nupkg.sha512",

@@ -11,19 +11,12 @@
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
       }
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": "5800"
-      //  }
-      //]
     }
-
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000",
     "ServiceDiscoveryProvider": {
-      "Host": "localhost",
+      "Host": "106.53.199.185",
       "Port": 8500,
       "Type": "Consul"
     }

@@ -1,14 +1,20 @@
-﻿{
+{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "ForDotNet.Auth": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/health",
-      "applicationUrl": "http://localhost:5800",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "http://localhost:5800"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/health",
+      "publishAllPorts": true
     }
   }
 }

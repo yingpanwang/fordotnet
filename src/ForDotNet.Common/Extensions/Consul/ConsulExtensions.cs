@@ -130,14 +130,14 @@ namespace ForDotNet.Common.Consul.Extensions
             var consulClientInfo = app.ApplicationServices.GetRequiredService<ConsulClientInfo>();
             if (consulClientInfo != null)
             {
-                life.ApplicationStarted.Register(async () =>
+                life.ApplicationStarted.Register( () =>
                 {
-                    await consulClientInfo.Client.Agent.ServiceRegister(consulClientInfo.RegisterInfo);
+                     consulClientInfo.Client.Agent.ServiceRegister(consulClientInfo.RegisterInfo).Wait();
                 });
 
-                life.ApplicationStopping.Register(async () =>
+                life.ApplicationStopping.Register( () =>
                 {
-                    await consulClientInfo.Client.Agent.ServiceDeregister(consulClientInfo.RegisterInfo.ID);
+                     consulClientInfo.Client.Agent.ServiceDeregister(consulClientInfo.RegisterInfo.ID).Wait();
                 });
             }
             else
