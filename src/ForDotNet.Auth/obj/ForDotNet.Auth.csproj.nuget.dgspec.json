@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj": {}
+    "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj": {}
   },
   "projects": {
-    "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj": {
+    "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj",
+        "projectUniqueName": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj",
         "projectName": "ForDotNet.Auth",
-        "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj",
-        "packagesPath": "C:\\Users\\WYP\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Auth\\obj\\",
+        "projectPath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Auth\\ForDotNet.Auth.csproj",
+        "packagesPath": "C:\\Users\\tel15\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WYP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tel15\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
-                "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj"
+              "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
+                "projectPath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj"
               }
             }
           }
@@ -69,6 +69,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,24 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
+    "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
+        "projectUniqueName": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
         "projectName": "ForDotNet.Common",
-        "projectPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
-        "packagesPath": "C:\\Users\\WYP\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\ForDotNet\\fordotnet\\src\\ForDotNet.Common\\obj\\",
+        "projectPath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
+        "packagesPath": "C:\\Users\\tel15\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WYP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tel15\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -186,6 +192,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -194,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BonaGyhpEuTPYqT5dzT+Ghm2v20uk72KsefAnynBIqbRloePzA6v4C0KrD1lPlrW0srbicV2KRHWF2aB0fGw+g==",
+  "success": true,
+  "projectFilePath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Web.Api\\ForDotNet.Web.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tel15\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -2,23 +2,35 @@
   "ReRoutes": [
     // Auth
     {
-      "UpstreamPathTemplate": "/auth/{action}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "ServiceName": "Auth",
-      "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/connect/{action}",
-      "DownstreamScheme": "http",
-      "LoadBalancerOptions": {
+      "UpstreamPathTemplate": "/auth/{action}", // 上游请求路径模板
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ], // 上游请求方法
+      "ServiceName": "Auth", // 服务名称
+      "UseServiceDiscovery": true, // 是否使用服务发现
+      "DownstreamPathTemplate": "/connect/{action}", // 下游匹配路径模板
+      "DownstreamScheme": "http", // 下游请求
+      "LoadBalancerOptions": { // 负载均衡配置
         "Type": "RoundRobin"
       }
+      //,
+      // 如果不采用服务发现需要指定下游host
+      //"DownstreamHostAndPorts": [
+      //  {
+      //    "Host": "10.0.1.10",
+      //    "Port": 5000
+      //  },
+      //  {
+      //    "Host": "10.0.1.11",
+      //    "Port": 5000
+      //  }
+      //]
     }
   ],
-  "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000",
-    "ServiceDiscoveryProvider": {
-      "Host": "106.53.199.185",
+  "GlobalConfiguration": { // 全局配置信息
+    "BaseUrl": "http://localhost:5000", // 请求 baseurl 
+    "ServiceDiscoveryProvider": { //服务发现提供者
+      "Host": "localhost",
       "Port": 8500,
-      "Type": "Consul"
+      "Type": "Consul" // 使用Consul
     }
   }
 }

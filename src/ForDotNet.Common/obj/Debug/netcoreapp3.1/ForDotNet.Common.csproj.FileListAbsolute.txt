@@ -16,3 +16,11 @@ D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\Fo
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.pdb
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csproj.CoreCompileInputs.cache
 D:\MyProject\ForDotNet\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csprojAssemblyReference.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.deps.json
+D:\MyProjects\fordotnet\src\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.dll
+D:\MyProjects\fordotnet\src\ForDotNet.Common\bin\Debug\netcoreapp3.1\ForDotNet.Common.pdb
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.AssemblyInfoInputs.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.AssemblyInfo.cs
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.dll
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.pdb
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csproj.CoreCompileInputs.cache
