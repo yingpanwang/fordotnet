@@ -24,3 +24,4 @@ D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.C
 D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.dll
 D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.pdb
 D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csproj.CoreCompileInputs.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Common\obj\Debug\netcoreapp3.1\ForDotNet.Common.csprojAssemblyReference.cache

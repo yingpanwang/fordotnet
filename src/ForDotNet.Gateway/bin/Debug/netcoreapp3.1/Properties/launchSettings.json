@@ -1,14 +1,14 @@
 {
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "ForDotNet.Auth": {
+    "ForDotNet.Gateway": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/health",
+      "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5800"
+      "applicationUrl": "http://localhost:5000"
     }
   }
 }

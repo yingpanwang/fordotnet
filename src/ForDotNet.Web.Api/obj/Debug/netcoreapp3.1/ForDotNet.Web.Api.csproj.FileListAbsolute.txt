@@ -17,3 +17,4 @@ D:\MyProjects\fordotnet\src\ForDotNet.Web.Api\obj\Debug\netcoreapp3.1\ForDotNet.
 D:\MyProjects\fordotnet\src\ForDotNet.Web.Api\obj\Debug\netcoreapp3.1\ForDotNet.Web.Api.pdb
 D:\MyProjects\fordotnet\src\ForDotNet.Web.Api\obj\Debug\netcoreapp3.1\ForDotNet.Web.Api.csproj.CoreCompileInputs.cache
 D:\MyProjects\fordotnet\src\ForDotNet.Web.Api\obj\Debug\netcoreapp3.1\ForDotNet.Web.Api.genruntimeconfig.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Web.Api\obj\Debug\netcoreapp3.1\ForDotNet.Web.Api.csprojAssemblyReference.cache
