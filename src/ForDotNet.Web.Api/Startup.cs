@@ -30,11 +30,12 @@ namespace ForDotNet.Web.Api
             //    .AddAuthentication("Bearer")
             //    .AddIdentityServerAuthentication(options =>
             //    {
-            //        options.Authority = "http://localhost:5800";
+            //        options.Authority = "http://localhost:5800"; // issuer地址
             //        options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Both;
             //        options.ApiName = "Api1";
-            //        options.RequireHttpsMetadata = false;
+            //        options.RequireHttpsMetadata = false; // 启用http
             //    });
+
             services.AddConsulServiceDiscovery();
 
             services.AddControllers();
@@ -48,7 +49,9 @@ namespace ForDotNet.Web.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            // 启用认证
             // app.UseAuthentication();
+            
             app.UseConsulServiceDiscovery(life);
 
             app.UseHttpsRedirection();

@@ -66,7 +66,8 @@ namespace ForDotNet.Auth.Config
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 AllowedScopes = new string[]
                 {
-                    "Api1"
+                    "Api1",
+                    "Admin"
                 }
             };
 
