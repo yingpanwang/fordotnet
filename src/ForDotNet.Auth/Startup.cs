@@ -22,16 +22,13 @@ namespace ForDotNet.Auth
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddIdentityServer(options =>
-                {
-                    // options.IssuerUri = "http://localhost:5800";
-                })
-                .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
-                .AddInMemoryClients(IdentityServerConfig.GetClients())
-                .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
+                .AddIdentityServer() // 注册IdentityServer4
+                .AddDeveloperSigningCredential() // 采用开发者凭证
+                .AddInMemoryApiResources(IdentityServerConfig.GetApiResources()) // 添加Api资源
+                .AddInMemoryClients(IdentityServerConfig.GetClients()) // 添加客户端
+                .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources()) // 添加身份资源
                 .AddResourceOwnerValidator<MyResourceOwnerValidator>();
-                //.AddTestUsers(new List<IdentityServer4.Test.TestUser>()
+                //.AddTestUsers(new List<IdentityServer4.Test.TestUser>() // 添加测试用户
                 //{
                 //     new IdentityServer4.Test.TestUser ()
                 //     {
@@ -41,7 +38,8 @@ namespace ForDotNet.Auth
                 //     }
                 //});
 
-            services.AddConsulServiceDiscovery();
+            // 注册服务发现服务
+            services.AddConsulServiceDiscovery(); 
 
             services.AddControllers();
         }
@@ -54,8 +52,10 @@ namespace ForDotNet.Auth
                 app.UseDeveloperExceptionPage();
             }
 
+            // 注册IdentityServer
             app.UseIdentityServer();
 
+            // 注册服务发现
             app.UseConsulServiceDiscovery(life);
 
             app.UseHttpsRedirection();
