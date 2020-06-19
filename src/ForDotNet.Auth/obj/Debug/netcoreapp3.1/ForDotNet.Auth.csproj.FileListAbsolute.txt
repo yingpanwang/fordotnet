@@ -421,3 +421,5 @@ D:\MyProjects\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\staticwebasse
 D:\MyProjects\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.dll
 D:\MyProjects\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.pdb
 D:\MyProjects\fordotnet\src\ForDotNet.Auth\obj\Debug\netcoreapp3.1\ForDotNet.Auth.genruntimeconfig.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Auth\bin\Debug\netcoreapp3.1\IdentityModel.AspNetCore.OAuth2Introspection.dll
+D:\MyProjects\fordotnet\src\ForDotNet.Auth\bin\Debug\netcoreapp3.1\IdentityServer4.AccessTokenValidation.dll

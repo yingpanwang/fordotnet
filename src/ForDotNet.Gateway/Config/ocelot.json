@@ -23,10 +23,43 @@
       //    "Port": 5000
       //  }
       //]
+    },
+    // api1
+    {
+      "UpstreamPathTemplate": "/api/v1/{action}", // 上游请求路径模板
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ], // 上游请求方法
+      "ServiceName": "Api1", // 服务名称
+      "UseServiceDiscovery": true, // 是否使用服务发现
+      "DownstreamPathTemplate": "/api/{action}", // 下游匹配路径模板
+      "DownstreamScheme": "http", // 下游请求
+      "LoadBalancerOptions": { // 负载均衡配置
+        "Type": "RoundRobin"
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": ["Admin"]
+      }
+    }, 
+    // api2
+    {
+      "UpstreamPathTemplate": "/api/v2/{action}", // 上游请求路径模板
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ], // 上游请求方法
+      "ServiceName": "Api2", // 服务名称
+      "UseServiceDiscovery": true, // 是否使用服务发现
+      "DownstreamPathTemplate": "/api/{action}", // 下游匹配路径模板
+      "DownstreamScheme": "http", // 下游请求
+      "LoadBalancerOptions": { // 负载均衡配置
+        "Type": "RoundRobin"
+      },
+
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": ["Api2"]
+      }
     }
   ],
   "GlobalConfiguration": { // 全局配置信息
-    "BaseUrl": "http://localhost:5000", // 请求 baseurl 
+    "BaseUrl": "http://localhost:5000", // 请求 baseurl
     "ServiceDiscoveryProvider": { //服务发现提供者
       "Host": "localhost",
       "Port": 8500,

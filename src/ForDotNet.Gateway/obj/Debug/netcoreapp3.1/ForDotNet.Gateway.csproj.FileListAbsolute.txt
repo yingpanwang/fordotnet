@@ -331,3 +331,5 @@ D:\MyProjects\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\staticweba
 D:\MyProjects\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.dll
 D:\MyProjects\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.pdb
 D:\MyProjects\fordotnet\src\ForDotNet.Gateway\obj\Debug\netcoreapp3.1\ForDotNet.Gateway.genruntimeconfig.cache
+D:\MyProjects\fordotnet\src\ForDotNet.Gateway\bin\Debug\netcoreapp3.1\IdentityModel.AspNetCore.OAuth2Introspection.dll
+D:\MyProjects\fordotnet\src\ForDotNet.Gateway\bin\Debug\netcoreapp3.1\IdentityServer4.AccessTokenValidation.dll

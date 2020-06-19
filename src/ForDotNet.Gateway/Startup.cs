@@ -23,9 +23,21 @@ namespace ForDotNet.Gateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services
+               .AddAuthentication("Bearer")
+               .AddIdentityServerAuthentication(options =>
+               {
+                   options.Authority = "http://localhost:5800";
+                   options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Both;
+                   options.ApiName = "Api1";
+                   options.RequireHttpsMetadata = false;
+               });
+
             services
                 .AddOcelot()
                 .AddConsul();
+
 
             services.AddControllers();
         }
@@ -37,6 +49,8 @@ namespace ForDotNet.Gateway
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseAuthentication();
 
             app.UseOcelot().Wait();
 

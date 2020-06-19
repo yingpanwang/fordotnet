@@ -9,7 +9,7 @@ namespace ForDotNet.Auth.Config
     public static class IdentityServerConfig
     {
         private const string AuthClientId = "Auth";
-        private const string UserCenterClientId = "UserCenter";
+        private const string Api1ClientId = "Api1";
 
         /// <summary>
         /// 获取api资源
@@ -20,7 +20,19 @@ namespace ForDotNet.Auth.Config
             return new List<ApiResource>()
             {
                 new ApiResource("Auth","AuthApi"),
-                new ApiResource("UserCenter","UserCenterApi")
+                // new ApiResource("Api1","Api1"),
+                new ApiResource()
+                {
+                    Name = "Api1",
+                    DisplayName = "Api1Display",
+                    Scopes = new Scope[]
+                    {
+                         new Scope("Api1","This Api1 Scope"),
+                         new Scope ("Business","This is Business Scope"),
+                         new Scope ("Admin","This Admin Scope")
+                    }
+                    
+                }
             };
         }
 
@@ -44,24 +56,24 @@ namespace ForDotNet.Auth.Config
                 }
             };
 
-            Client userClient = new Client()
+            Client api1Client = new Client()
             {
-                ClientId = UserCenterClientId,
+                ClientId = Api1ClientId,
                 ClientSecrets = new List<Secret>()
                 {
-                    GetSecret(UserCenterClientId)
+                    GetSecret(Api1ClientId)
                 },
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 AllowedScopes = new string[]
                 {
-                    "UserCenter"
+                    "Api1"
                 }
             };
 
             return new List<Client>()
             {
                 authClient,
-                userClient
+                api1Client
             };
         }
 
@@ -69,6 +81,7 @@ namespace ForDotNet.Auth.Config
         {
             return new List<IdentityResource>()
             {
+                new IdentityResources.OpenId()
             };
         }
 

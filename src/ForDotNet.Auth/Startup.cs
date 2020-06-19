@@ -21,20 +21,25 @@ namespace ForDotNet.Auth
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentityServer()
+            services
+                .AddIdentityServer(options =>
+                {
+                    // options.IssuerUri = "http://localhost:5800";
+                })
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
                 .AddInMemoryClients(IdentityServerConfig.GetClients())
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
-                .AddTestUsers(new List<IdentityServer4.Test.TestUser>()
-                {
-                     new IdentityServer4.Test.TestUser ()
-                     {
-                         Username = "admin",
-                         Password = "123",
-                         SubjectId = "999"
-                     }
-                });
+                .AddResourceOwnerValidator<MyResourceOwnerValidator>();
+                //.AddTestUsers(new List<IdentityServer4.Test.TestUser>()
+                //{
+                //     new IdentityServer4.Test.TestUser ()
+                //     {
+                //         Username = "admin",
+                //         Password = "123",
+                //         SubjectId = "999"
+                //     }
+                //});
 
             services.AddConsulServiceDiscovery();
 

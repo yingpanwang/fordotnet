@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vy+0X2v42YmY7EXoQbmfQtAkwNq7u+iT2UYSxXNYBhNGeahW9jEDqfCnspjbfqZJ22/6+5PznzQs6noh9HXDVw==",
+  "dgSpecHash": "V01DT3kNSOqZboi0ovP5FDrUqysNg7DDdK8SFWHUAxGXKJkztMr18JaWfGZces8meo0pp6syqABNJjUTPBNpyg==",
   "success": true,
   "projectFilePath": "D:\\MyProjects\\fordotnet\\src\\ForDotNet.Common\\ForDotNet.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tel15\\.nuget\\packages\\consul\\0.7.2.6\\consul.0.7.2.6.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\fluentvalidation\\8.6.1\\fluentvalidation.8.6.1.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\identitymodel\\4.2.0\\identitymodel.4.2.0.nupkg.sha512",
+    "C:\\Users\\tel15\\.nuget\\packages\\identitymodel.aspnetcore.oauth2introspection\\4.0.1\\identitymodel.aspnetcore.oauth2introspection.4.0.1.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\identityserver4\\3.1.3\\identityserver4.3.1.3.nupkg.sha512",
+    "C:\\Users\\tel15\\.nuget\\packages\\identityserver4.accesstokenvalidation\\3.0.1\\identityserver4.accesstokenvalidation.3.0.1.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\identityserver4.storage\\3.1.3\\identityserver4.storage.3.1.3.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.3\\microsoft.aspnetcore.authentication.jwtbearer.3.1.3.nupkg.sha512",
     "C:\\Users\\tel15\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
