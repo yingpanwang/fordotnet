@@ -9,5 +9,7 @@
 * RabbitMQ 3.8.0 消息队列
 
 ## 开发依赖框架
+
 * **Ocelot** 网关
 * **IdentityServer4** 认证授权
+* **Serilog** 日志
