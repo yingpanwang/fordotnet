@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Sinks.Elasticsearch;
 
 namespace ForDotNet.Web.Api
 {
@@ -21,6 +23,10 @@ namespace ForDotNet.Web.Api
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureLogging(configure=>
+                    {
+                        configure.ClearProviders();
+                    });
                 });
     }
 }

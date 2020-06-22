@@ -15,10 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Sites", "1_Sites", "{E7F6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Lib", "2_Lib", "{C451014F-21BD-409C-96ED-93A161855995}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Services", "3_Services", "{EE7B522E-108B-4623-8EF8-23F1B43646C4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Repsitories", "4_Repsitories", "{1FB9D9EE-D2E7-453C-8715-5765B6758D89}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

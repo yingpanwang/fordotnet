@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Sinks.Elasticsearch;
 
 namespace ForDotNet.Web.Api
 {
@@ -19,6 +21,17 @@ namespace ForDotNet.Web.Api
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            //初始化Serilog
+            Log.Logger = new LoggerConfiguration()
+                    .Enrich.FromLogContext()
+                    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level}] {SourceContext}{NewLine}{Message:lj}{NewLine}{Exception}{NewLine}")
+                    .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
+                    {
+                        AutoRegisterTemplate = true,
+                        IndexFormat = "Api1-{0:yyyy-MM-dd}",// es index模板
+                    })
+                    .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
@@ -26,32 +39,23 @@ namespace ForDotNet.Web.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services
-            //    .AddAuthentication("Bearer")
-            //    .AddIdentityServerAuthentication(options =>
-            //    {
-            //        options.Authority = "http://localhost:5800"; // issuer地址
-            //        options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Both;
-            //        options.ApiName = "Api1";
-            //        options.RequireHttpsMetadata = false; // 启用http
-            //    });
-
+            // 添加当前项目服务发现
             services.AddConsulServiceDiscovery();
 
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IHostApplicationLifetime life)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory,IHostApplicationLifetime life)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            // 启用认证
-            // app.UseAuthentication();
-            
+            // 添加serilog
+            loggerFactory.AddSerilog();
+
             app.UseConsulServiceDiscovery(life);
 
             app.UseHttpsRedirection();
