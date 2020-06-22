@@ -37,7 +37,7 @@
       },
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": ["Admin"]
+        "AllowedScopes": ["Api1"]
       }
     }, 
     // api2
