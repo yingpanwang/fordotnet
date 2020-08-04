@@ -13,3 +13,4 @@
 * **Ocelot** 网关
 * **IdentityServer4** 认证授权
 * **Serilog** 日志
+* **Grpc** RPC
